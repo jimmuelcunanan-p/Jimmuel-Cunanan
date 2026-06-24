@@ -802,7 +802,7 @@ footer{border-top:1px solid var(--rule);padding:2.5rem 3rem;display:flex;align-i
         <div class="contact-icon pdf-icon"><i class="ti ti-file-type-pdf"></i></div>
         <div>
           <div class="contact-label">Download Resume</div>
-          <div class="contact-value" id="pdfBtnText">Jimmuel_Cunanan_CV.pdf</div>
+          <div class="contact-value" id="pdfBtnText">CV.pdf</div>
         </div>
       </button>
 
@@ -951,15 +951,15 @@ function generateResumePDF(){
   btnText.textContent = 'Downloading…';
 
   const a = document.createElement('a');
-  a.href = 'CV.pdf.pdf';
-  a.download = 'Jimmuel_Cunanan_CV.pdf';
+  a.href = 'CV.pdf';
+  a.download = 'CV.pdf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
 
   setTimeout(() => {
     btn.classList.remove('generating');
-    btnText.textContent = 'Jimmuel_Cunanan_CV.pdf';
+    btnText.textContent = 'CV.pdf';
   }, 1200);
 }
 </script>
